@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Montserrat{
+    font-family: "Montserrat", sans-serif;
+}
+
+.lexend {
+    font-family: "Lexend", sans-serif;
+  }
+  
+  .my-class {
+    --unicode: '\E905';
+    font-family: 'Wasabi';
+  }
+
+.BtnScrolldown {
+    animation: bounce 1s;
+    transform: translateY(0px);
+    animation-iteration-count: infinite;
+    position:absolute;
+  }
+  
+  @keyframes bounce {
+    0% {top: 0;
+      -webkit-animation-timing-function: ease-in;
+    }
+    40% {}
+    50% {top: 140px;
+      height: 140px;
+      -webkit-animation-timing-function: ease-out;
+    }
+    55% {top: 160px; height: 120px; 
+      -webkit-animation-timing-function: ease-in;}
+    65% {top: 120px; height: 140px; 
+      -webkit-animation-timing-function: ease-out;}
+    95% {
+      top: 0;   
+      -webkit-animation-timing-function: ease-in;
+    }
+    100% {top: 0;
+      -webkit-animation-timing-function: ease-in;
+    }
+  }
