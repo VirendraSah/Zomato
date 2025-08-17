@@ -45,7 +45,6 @@ export default function Slider({ eternalCardsData }) {
                     loop={true}
                     slidesPerView={"auto"}
                     freeMode={true}
-                    freeModeMomentum={false}
                     watchSlidesProgress={true}
                     autoplay={{
                         delay: 2500,

@@ -43,10 +43,10 @@ function DownloadAppNow() {
                             </figure>
                         </div>
                     </div>
-                    <div class="absolute hidden sm:block right-[-30%] top-[30%] aspect-square w-[90%]">
-                        <div class="flex aspect-square w-full items-center justify-center rounded-full border-2 border-red-100">
-                            <div class="flex aspect-square w-4/5 items-center justify-center rounded-full border-2 border-red-100">
-                                <div class="flex aspect-square w-3/4 items-center justify-center rounded-full border-2 border-red-100">
+                    <div className="absolute hidden sm:block right-[-30%] top-[30%] aspect-square w-[90%]">
+                        <div className="flex aspect-square w-full items-center justify-center rounded-full border-2 border-red-100">
+                            <div className="flex aspect-square w-4/5 items-center justify-center rounded-full border-2 border-red-100">
+                                <div className="flex aspect-square w-3/4 items-center justify-center rounded-full border-2 border-red-100">
                                 </div>
                             </div>
                         </div>

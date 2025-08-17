@@ -33,6 +33,7 @@ export function Eternal() {
             className: "border-[rgb(254_226_226)] from-[#FFEDEF] to-[#FFF5F6]"
         }
     ]
+    const slides=[...eternalCardsData, ...eternalCardsData, ...eternalCardsData];
     return (
         <>
             {/* Eternal section: A section that highlights the timeless nature of the brand */}
@@ -55,7 +56,7 @@ export function Eternal() {
                         </div>
                     </div>
                     <div className="w-full flex justify-center sm:hidden">
-                        <Slider eternalCardsData={eternalCardsData} />
+                        <Slider eternalCardsData={slides} />
                     </div>
 
                 </div>
