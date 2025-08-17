@@ -36,7 +36,7 @@ export function Eternal() {
     return (
         <>
             {/* Eternal section: A section that highlights the timeless nature of the brand */}
-            <section className='w-full rounded-t-4xl sm:rounded-none py-3 sm:pb-20 sm:py-10 h-lvh sm:h-auto flex justify-center'>
+            <section className='w-full rounded-t-4xl sm:rounded-none sm:pb-20 py-10  sm:h-auto flex justify-center'>
                 <div className="flex flex-col gap-2 sm:gap-7">
                     <div>
                         <figure className="h-[76px] w-[114px] sm:w-64 sm:h-44 m-auto flex justify-center">

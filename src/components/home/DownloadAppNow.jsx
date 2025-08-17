@@ -3,7 +3,7 @@ import React from 'react'
 function DownloadAppNow() {
     return (
         <React.Fragment>
-            <section className='w-full sm:py-10 h-lvh sm:h-auto lg:h-lvh sm:px-8'>
+            <section className='w-full pb-10 sm:py-10  sm:h-auto lg:h-lvh sm:px-8'>
                 <div className='max-w-[1200px] sm:bg-[linear-gradient(180deg,_#FFFFFF_0%,_#FFEDEF_100%)] h-full m-auto sm:border-4 sm:border-[#ffdbe0] flex flex-col sm:flex-row items-center justify-around gap-4 sm:gap-8 relative overflow-hidden sm:shadow-[0px_8px_10px_0px_#1C1C1C14] rounded-t-4xl sm:rounded-4xl'>
                     <div className='sm:hidden h-[50%] bg-gradient-to-t from-[#FFF] to-[#FEDCE0] flex items-end'>
                         <figure className='h-full flex items-end'>
