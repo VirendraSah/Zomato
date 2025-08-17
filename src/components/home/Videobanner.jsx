@@ -1,11 +1,12 @@
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+import zomatoVideo from "../../assets/video/zomato.mp4";
 
 export function Videobanner() {
     return (
         <>
             <section className='w-full h-[100vh] object-cover relative' id='Header'>
                 <video className='w-[100%] h-[100%] object-cover relative' autoPlay loop muted>
-                    <source src="public/video/zomato.mp4" className='w-[100%]' type="video/mp4" />
+                    <source src={zomatoVideo} className='w-[100%]' type="video/mp4" />
                 </video>
                 <div className='w-[100%] h-[100%] bg-gradient-to-b from-[#00000023] to-[#0f0f0fe1] absolute z-[9] top-0 flex  justify-end items-center flex-col text-white text-center gap-5 pb-20'>
                     <figure className='w-[150px] sm:w-[200px] mb-4'>
