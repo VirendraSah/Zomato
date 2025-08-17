@@ -2,7 +2,7 @@ export function FeaturesSection() {
     return (
         <>
             {/* Features section: What’s waiting for you on the app? */}
-            <section className='w-full bg-gradient-to-b from-[#FFEDEF] to-[#FFFFFF] pt-10 pb-20'>
+            <section className='w-full rounded-t-4xl sm:h-lvh sm:rounded-none bg-gradient-to-b from-[#FFEDEF] to-[#FFFFFF] pt-10 pb-20'>
                 <div className='w-full max-w-[1320px] m-auto flex flex-col'>
                     <div className='flex flex-col gap-5'>
                         {/* Section heading */}
@@ -11,7 +11,7 @@ export function FeaturesSection() {
                         </div>
                         {/* Section description */}
                         <div className='md:w-full w-9/12 m-auto'>
-                            <p className='text-center font-normal text-[#596378] leading-8 text-2xl'>Our app is packed with features that <br className='hidden sm:block' /> enable you to experience food <br className='hidden sm:block' />delivery like never before</p>
+                            <p className='text-center text-[#596378] sm:leading-8 text-[13px] sm:text-2xl'>Our app is packed with features that <br className='hidden sm:block' /> enable you to experience food <br className='hidden sm:block' />delivery like never before</p>
                         </div>
                     </div>
                     {/* Desktop view: feature cards around phone image */}

@@ -3,7 +3,7 @@ export function HeroSection() {
     return (
         <>
             {/* Hero section with images and main headline */}
-            < section className='w-full pb-20' >
+            < section className='w-full pb-20 rounded-t-4xl sm:rounded-none' >
                 <div className='w-full relative h-max'>
                     {/* Decorative images and main text */}
                     <div className='w-full h-[28em] md:h-[40em] relative flex items-center justify-center overflow-hidden'>

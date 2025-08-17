@@ -3,7 +3,7 @@ export function GoldbenefitsSection() {
         <>
             {/* Gold benefits section */}
             <section className='relative'>
-                <div className=" relative flex flex-col items-center justify-center overflow-hidden bg-black -z-30 px-1 sm:px-10  py-[20vw] text-white xl:px-20 xl:py-72 rounded-t-3xl sm:rounded-none h-lvh sm:h-auto">
+                <div className=" relative flex flex-col items-center justify-center overflow-hidden bg-black -z-30 px-1 sm:px-10  py-[20vw] text-white xl:px-20 xl:py-72 rounded-t-3xl sm:rounded-none h-[150%] sm:h-auto">
                     {/* Decorative background images */}
                     <img src="images/67960dbea89626613dfe59ebe00475011741697422.webp" alt="bg-ring" className='sm:hidden w-full h-full absolute -z-20' />
                     <img src="images/6ecb2e1b4e412376645848c9c39098a81739521607.webp" className="absolute left-0 top-7 sm:top-20 z-[99] size-18  sm:size-28 lg:size-36 xl:size-44 2xl:size-48 " style={{ opacity: 1, transform: "none" }} />
@@ -13,7 +13,7 @@ export function GoldbenefitsSection() {
                     <div className="flex w-fit flex-col  items-center justify-center gap-8 2xl:gap-16  ">
                         <div className="flex  w-[45%] flex-col items-center justify-center gap-6">
                             <div>
-                                <img alt="Gold logo" src="images/5f94743e20e3f668953fda8b0e56f2f71742996005.webp" className="mx-auto h-auto w-3/5" />
+                                <img alt="Gold logo" src="images/5f94743e20e3f668953fda8b0e56f2f71742996005.webp" className="mx-auto h-auto sm:w-3/5" />
                             </div>
                             <div className="text-subtitle font-normal bg-gradient-to-r from-[#8C6115] via-[#E9C789] to-[#996F25] bg-clip-text text-center text-transparent">
                                 <div className="">India’s Top Savings </div>
@@ -34,7 +34,7 @@ export function GoldbenefitsSection() {
                         </div>
                         {/* Gold benefits cards */}
                         <div className="flex flex-row justify-around sm:justify-center gap-5 sm:gap-10 items-center w-full ">
-                            <div className="flex max-w-36 sm:flex-1/2 border border-[#c4ae8952] sm:border-0 sm:w-full  items-center gap-6 rounded-3xl   sm:max-w-[384px] lg:aspect-auto  xl:max-w-[557px] flex-col sm:flex-row">
+                            <div className="flex max-w-36 sm:flex-1/2 border border-[#c4ae8952] sm:border-0 sm:w-full  items-center gap-6 rounded-3xl   sm:max-w-[384px] lg:aspect-auto  xl:max-w-[557px] flex-col sm:flex-row bg-black">
                                 <img src="images/bc9d2a579285cbdaa101b8fe2ba68f601741779645.webp" className="aspect-square h-full max-h-[111px] sm:max-h-[74px]" />
                                 <div className="flex w-full flex-col items-center sm:items-start lg:items-start justify-center px-5 pb-2">
                                     <div className="text-subtitle bg-gradient-to-br from-[#FEF3E0] to-[#FFFEFC] bg-clip-text text-center sm:text-start lg:text-start font-medium text-transparent xl:text-2xl text-sm">
@@ -46,7 +46,7 @@ export function GoldbenefitsSection() {
                                 </div>
                             </div>
 
-                            <div className="flex max-w-36 border border-[#c4ae8952] sm:border-0 items-center gap-6 rounded-3xl sm:max-w-[384px] lg:aspect-auto  xl:max-w-[557px] flex-col sm:flex-row">
+                            <div className="flex max-w-36 border border-[#c4ae8952] sm:border-0 items-center gap-6 rounded-3xl sm:max-w-[384px] lg:aspect-auto  xl:max-w-[557px] flex-col sm:flex-row bg-black">
                                 <img src="images/d668ed26c7d4771318d0aa03b3f905e71741779899.webp" className="aspect-square h-full max-h-[111px] sm:max-h-[74px]" />
                                 <div className="flex w-full flex-col sm:items-start lg:items-start justify-center px-5 pb-2">
                                     <div className="text-subtitle bg-gradient-to-br from-[#FEF3E0] to-[#FFFEFC] bg-clip-text text-sm sm:text-start font-medium text-transparent xl:text-2xl text-center">Up to 30% <br className='sm:hidden' /> extra off</div>
