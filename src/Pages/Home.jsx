@@ -4,14 +4,15 @@ import { GoldbenefitsSection } from "../components/home/GoldbenefitsSection";
 import { Eternal } from "../components/home/Eternal";
 import DownloadAppNow from "../components/home/DownloadAppNow";
 import Footer from "../components/home/Footer";
-import {VideoBanner} from "../components/home/VideoBanner"
-
+import { Video } from "../components/home/Video";
 // Home page main component
 function Home() {
     return (
         <>
             {/* Video banner section at the top */}
-            <VideoBanner />
+            <Video />
+            {/* Main header section */}
+            {/* Main content sections */}
 
             <main>
                 <HeroSection />
