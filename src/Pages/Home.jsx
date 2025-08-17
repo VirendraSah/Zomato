@@ -1,4 +1,4 @@
-import { Videobanner } from "../components/home/Videobanner"
+import { VideoBanner } from "../components/home/VideoBanner"
 import { HeroSection } from "../components/home/HeroSection";
 import { FeaturesSection } from "../components/home/FeaturesSection";
 import { GoldbenefitsSection } from "../components/home/GoldbenefitsSection";
@@ -11,7 +11,7 @@ function Home() {
     return (
         <>
             {/* Video banner section at the top */}
-            <Videobanner />
+            <VideoBanner />
             <main>
                 <HeroSection />
                 <FeaturesSection />

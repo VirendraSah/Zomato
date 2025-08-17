@@ -1,7 +1,7 @@
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
-import zomatoVideo from "../../assets/video/zomato.mp4";
+import zomatoVideo from "../../../public/videos/zomato.mp4";
 
-export function Videobanner() {
+export function VideoBanner() {
     return (
         <>
             <section className='w-full h-[100vh] object-cover relative' id='Header'>
