@@ -7,7 +7,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
     return (
-        <footer className='w-full bg-black py-10 text-white'>
+        <footer className='w-full bg-black py-20 text-white'>
             <div className='max-w-[1000px] m-auto px-5'>
                 <figure className='w-[200px] mb-10'>
                     <img src="images/8313a97515fcb0447d2d77c276532a511583262271.webp" alt="zomato-logo" className='w-full' />
@@ -115,7 +115,13 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-
+                <div className='w-full mt-10'>
+                    <hr className='mb-4 text-[#62626a] lg:block hidden' />
+                    <p className='text-[#62626a] text-[10px] lexend '>
+                        By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners <br className='hidden lg:block' />
+                        2008-2025 © Zomato™ Ltd. All rights reserved.
+                    </p>
+                </div>
             </div>
         </footer>
     )

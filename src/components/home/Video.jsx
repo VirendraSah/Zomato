@@ -1,6 +1,6 @@
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
-function Video() {
+function Video({handleScroll}) {
     return (
         <>
             <section className='w-full h-[100vh] object-cover relative' id='Header'>
@@ -27,7 +27,7 @@ function Video() {
                     </div>
                 </div>
                 <div className='hidden sm:block'>
-                    <button className='flex items-center justify-center font-semibold absolute bottom-[10px] text-white z-[9] left-[50%] translate-x-[-50%] BtnScrolldown cursor-pointer'>
+                    <button onClick={handleScroll} className='flex items-center justify-center font-semibold absolute bottom-[10px] text-white z-[9] left-[50%] translate-x-[-50%] BtnScrolldown cursor-pointer'>
                         Scroll down
                         <MdOutlineKeyboardDoubleArrowDown />
                     </button>

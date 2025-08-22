@@ -1,8 +1,12 @@
+import useScrollAnimation from '../../commom/hooks/useScrollAnimation';
+import React, { useRef } from 'react';
 export function GoldbenefitsSection() {
+    const ref = useRef(null);
+    useScrollAnimation(ref);
     return (
         <>
             {/* Gold benefits section */}
-            <section className='relative'>
+            <section className='relative' ref={ref} id='gold-benefits'>
                 <div className=" relative flex flex-col items-center justify-center overflow-hidden bg-black -z-30 px-1 sm:px-10  py-[20vw] text-white xl:px-20 xl:py-72 rounded-t-3xl sm:rounded-none h-[150%] sm:h-auto">
                     {/* Decorative background images */}
                     <img src="images/67960dbea89626613dfe59ebe00475011741697422.webp" alt="bg-ring" className='sm:hidden w-full h-full absolute -z-20' />

@@ -1,10 +1,23 @@
+import React, { useContext } from 'react';
+import { ScrollContext } from '../../context/ScrollContext';
+import { useRef } from "react";
+import useScrollAnimation from '../../commom/hooks/useScrollAnimation';
 
-export function HeroSection() {
+export function HeroSection({ sectionRef }) {
+    const { foodAnimaton } = useContext(ScrollContext);
+    const ref = useRef(null);
+    useScrollAnimation(ref);
+
     return (
         <>
             {/* Hero section with images and main headline */}
-            < section className='w-full pb-20 rounded-t-4xl sm:rounded-none' >
-                <div className='w-full relative h-max'>
+            < section
+                ref={(el) => {
+                    ref.current = el;     
+                    sectionRef.current = el;
+                }}
+                className=' w-full pb-20 rounded-t-4xl sm:rounded-none' id='hero-section'>
+                <div className='w-full relative h-max' ref={foodAnimaton}>
                     {/* Decorative images and main text */}
                     <div className='w-full h-[28em] md:h-[40em] relative flex items-center justify-center overflow-hidden'>
                         {/* Left track image */}
@@ -20,7 +33,7 @@ export function HeroSection() {
                             <img src="images/70b50e1a48a82437bfa2bed925b862701742892555.webp" alt="Leaf" className='w-[100%]' />
                         </figure>
                         {/* Burger image left */}
-                        <figure className='absolute max-w-1/5 top-2/5 left-3 sm:left-1/12' id='burger'>
+                        <figure className='absolute max-w-1/5 top-1/5 left-[-300px] sm:left-[-35%] md:left-[-30%] lg:left-[-17%]' id='burger'>
                             <img src="images/364f85b5586700f0a3f7108cedf543011739962117.webp" alt="Burger" className='w-[100%]' />
                         </figure>
                         {/* Main headline and description */}
@@ -41,12 +54,12 @@ export function HeroSection() {
                         <figure className='absolute w-[50px] right-[4%] top-5/12 rotate-45'>
                             <img src="images/9ef1cc6ecf1d92798507ffad71e9492d1742892584.webp" alt="tomato" className='w-[100%]' />
                         </figure>
-                        {/* Manchurian image top right */}
-                        <figure className='absolute max-w-1/5 right-[12%] top-[5%]' id='#manchurian'>
+                        {/* Momoz plate image top right */}
+                        <figure className='absolute max-w-1/5 right-[-200px]  sm:right-[-27%] md:right-[-20%] lg:right-[-10%] top-[-25%]' id='momoz'>
                             <img src="images/3d1b3a891e2c59fd5ae7654dd207370b1739514134.webp" alt="Burger" className='w-[100%]' />
                         </figure>
                         {/* Pizza image bottom right */}
-                        <figure className='absolute max-w-1/5 bottom-[5%] right-1/12'>
+                        <figure className='absolute max-w-1/5 bottom-[50%] sm:bottom-[40%] md:bottom-[35%] right-[-200px] sm:right-[-25%] md:right-[-20%] lg:right-[-15%]' id='pizza'>
                             <img src="images/c7523de995639024918c6947c4b2cdcd1742894059.webp" alt="pizza" />
                         </figure>
                     </div>

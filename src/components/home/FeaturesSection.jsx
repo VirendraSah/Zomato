@@ -1,8 +1,43 @@
+import React, { useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+import useScrollAnimation from '../../commom/hooks/useScrollAnimation';
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 export function FeaturesSection() {
+    const PhoneAnimation = useRef();
+    const ref = useRef(null);
+    useScrollAnimation(ref);
+
+    useGSAP(
+        () => {
+            const section = document.querySelector('#features-section');
+            const phoneAnimation = document.querySelector('#phone-animation');
+            // Animate phone-image
+            gsap.to(phoneAnimation, {
+                x: 0,
+                y: -150,
+                duration: 2,
+                immediateRender: false,
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top 95%',
+                    toggleActions: "play none none none",
+                },
+            });
+        },
+
+        { scope: PhoneAnimation }
+    );
+
     return (
         <>
             {/* Features section: What’s waiting for you on the app? */}
-            <section className='w-full rounded-t-4xl sm:h-lvh sm:rounded-none bg-gradient-to-b from-[#FFEDEF] to-[#FFFFFF] pt-10 pb-20'>
+            <section ref={(el) => {
+                    ref.current = el;        // gsap animation ke liye
+                    PhoneAnimation.current = el; // tumhare scroll ya custom logic ke liye
+                }} className='w-full overflow-hidden rounded-t-4xl sm:h-lvh sm:rounded-none bg-gradient-to-b from-[#FFEDEF] to-[#FFFFFF] pt-10 pb-20' id='features-section'>
                 <div className='w-full max-w-[1320px] m-auto flex flex-col'>
                     <div className='flex flex-col gap-5'>
                         {/* Section heading */}
@@ -30,7 +65,7 @@ export function FeaturesSection() {
                             </div>
                         </div>
                         {/* Center phone image and schedule card */}
-                        <div className='relative'>
+                        <div className='relative bottom-[-150px]' id="phone-animation">
                             <figure className='w-[214px]'>
                                 <img src="images/3f7e2757e62fd22592b879bd56b666011742294630.webp" alt="phone" className='w-full' />
                             </figure>
